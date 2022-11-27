@@ -1,10 +1,11 @@
 ---
 import MantineLayout from "../layouts/Mantine.jsx";
 import Upload from "../components/Upload.jsx";
+import { IMAGE_MIME_TYPE } from "@mantine/dropzone";
 ---
 
 <div>
   <MantineLayout client:load>
-    <Upload client:only />
+    <Upload accept={IMAGE_MIME_TYPE} client:only />
   </MantineLayout>
 </div>
